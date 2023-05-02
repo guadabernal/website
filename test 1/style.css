@@ -1,0 +1,283 @@
+body {
+  background-color: #CDB7F2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.text-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 0%;
+  max-width: 100%;
+}
+
+.name-box {
+  background-color: white;
+  border-radius: 33px;
+  padding: 20px;
+  font-size: 45px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.description-box {
+  color: white;
+  text-align: left;
+  max-width: 80%;
+  font-size: 25px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: auto;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 950px) {
+  .content {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .text-container {
+    margin-right: 0%;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 5px; /* adjust this value to change the spacing */
+  }
+
+  .image-container {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+
+  .name-box {
+    font-size: 36px;
+  }
+
+  .description-box {
+    font-size: 20px;
+  }
+
+  .image {
+    max-width: 25%;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 180px; /* adjust this value as needed */
+    min-width: 180px; /* adjust this value as needed */
+  }
+}
+
+
+
+
+.btn-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f6f1cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: #595959;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.btn:hover {
+  color: #333;
+}
+
+#projects-section {
+  background-color: white !important;
+}
+
+.resume-section {
+  background-color: #8a2be2;
+  color: #fff;
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resume-section h2 {
+  font-size: 48px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.resume-section p {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+
+/* Menu button */
+.menu-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.menu-icon:before,
+.menu-icon:after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, 0%);
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.menu-icon:before {
+  top: -10px;
+}
+
+.menu-icon:after {
+  bottom: -10px;
+}
+
+
+
+
+#menu-panel {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #eee;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+#menu-panel.open {
+  right: 0;
+}
+
+#menu-panel ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#menu-panel li {
+  margin: 20px;
+  font-size: 24px;
+}
+
+#menu-panel a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-box {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #eee;
+  text-align: center;
+  border: 2px solid #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-box:hover {
+  font-weight: bold;
+  border-color: #333;
+}
+
+.project-title {
+  margin-top: 0;
+}
+
+.project-image {
+  height: 150px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+.project-description {
+  margin-top: 10px;
+  line-height: 1.5;
+  max-height: 150px;
+  overflow: hidden;
+  color: white;
+  text-align: left;
+  font-size: 25px;
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guadalupe Bernal</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+	    	<div class="text-container">
+				<div class="name-box"> Guadalupe Bernal </div>
+				<div class="description-box"> 
+						Welcome! I am a Cornell senior electrical computer engineering student 
+						and an aspiring roboticist. I have spent my academic career working on 
+						a wide range of projects, from mechanical spacecraft actuators to FPGA 
+						micro-controller design, and every step in-between. I am excited to
+						embark on the next chapter of my career and make a meaningful impact in 
+						this exciting and ever-evolving industry.
+				</div>
+	    	</div>
+	    	<div class="image-container"> <img class="image" src="profile_pic.jpg" alt="Placeholder Image" /> </div>
+	  	</div>
+	</div>
+
+	<button id="menu-button" class="menu-button">
+    	<span class="menu-icon"></span>
+  	</button>
+
+
+	<div id="menu-panel">
+	  <ul>
+	    <li><a href="#projects-section" onclick="scrollToProjects()">Projects</a></li>
+	    <li><a href="#resume-contact-section" onclick="scrollToResume()">Resume & Contact Info</a></li>
+	  </ul>
+	</div>
+	
+
+	<div class="box1">
+		<div class="btn-bar">
+			<button class="btn" onclick="scrollToProjects()">Projects</button>
+			<button class="btn" onclick="scrollToResume()">Resume &amp; Contact Info</button>
+		</div>
+	</div>
+
+	
+	<div class="project-container">
+		<div class="project-box">
+			<a href="project1.html">
+				<h3 class="project-title">Project 1</h3>
+				<div class="project-image"><img src="project1.jpg" alt="Project 1 Image"></div>
+				<div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget nulla ex. Integer feugiat in augue quis faucibus. </div>
+			</a>
+		</div>
+		<div class="project-box">
+			<a href="project2.html">
+				<h3 class="project-title">Project 2</h3>
+				<div class="project-image"><img src="project2.jpg" alt="Project 2 Image"></div>
+				<div class="project-description">Suspendisse ut turpis eu mi mollis posuere. Vivamus malesuada ex ut erat dapibus consequat.</div>
+			</a>
+		</div>
+		<div class="project-box">
+			<a href="project3.html">
+				<h3 class="project-title">Project 3</h3>
+				<div class="project-image"><img src="project3.jpg" alt="Project 3 Image"></div>
+				<div class="project-description">Pellentesque sit amet elit elit. Donec eget mauris massa. Nullam malesuada faucibus rutrum. </div>
+			</a>
+		</div>
+	</div>
+
+
+
+	<div class="resume-section" id="resume">
+		<h2>Resume &amp; Contact Info</h2>
+		<p>Resume content goes here.</p>
+		<p>Contact information goes here.</p>
+	</div>
+
+	<script src="myScript.js"></script>
+</body>
+</html>

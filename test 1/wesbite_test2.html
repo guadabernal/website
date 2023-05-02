@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guadalupe Bernal</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.box1 {
+			width: 65%;
+			height: calc(100vh - 80px);
+			background-color: #fff;
+			border-radius: 0 40px 40px 0;
+			padding: 40px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.box1 h1 {
+			font-size: 64px;
+			margin: 0;
+			margin-bottom: 20px;
+			color: #333;
+		}
+		.box1 p {
+			font-size: 24px;
+			color: #333;
+		}
+		.box2 {
+			width: 35%;
+			height: 100%;
+			background-image: url("https://via.placeholder.com/400x600");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			position: relative;
+			border-radius: 0 40px 40px 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 0 40px 40px 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+			text-align: center;
+		}
+		.overlay h2 {
+			font-size: 48px;
+			margin: 0;
+			color: #333;
+		}
+		.overlay p {
+			font-size: 24px;
+			margin: 20px 0;
+			color: #333;
+		}
+		.btn-bar {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: #f9c2e6;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+		}
+
+		.btn {
+			background-color: transparent;
+			border: none;
+			color: #fff;
+			font-size: 24px;
+			cursor: pointer;
+			margin-right: 20px;
+		}
+		.btn:hover {
+			color: #333;
+		}
+		.projects-section {
+			background-color: #fff;
+			padding: 40px;
+			min-height: 100vh;
+		}
+		.resume-section {
+			background-color: #8a2be2;
+			color: #fff;
+			padding: 40px;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.resume-section h2 {
+			font-size: 48px;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+		.resume-section p {
+			font-size: 24px;
+			margin: 0;
+			margin-bottom: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1">
+			<div class="btn-bar">
+				<button class="btn" onclick="scrollToProjects()">Projects</button>
+				<button class="btn" onclick="scrollToResume()">Resume &amp; Contact Info</button>
+			</div>
+		</div>
+		<div class="box2">
+			<div class="overlay">
+				<h2>Guadalupe Bernal</h2>
+				<p>A short description about Guadalupe.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="projects-section" id="projects">
+		<!-- Projects section content goes here -->
+	</div>
+
+	<div class="resume-section" id="resume">
+		<h2>Resume &amp; Contact Info</h2>
+		<p>Resume content goes here.</p>
+		<p>Contact information goes here.</p>
+	</div>
+
+	<script>
+		function scrollToProjects() {
+			document.getElementById("projects").scrollIntoView({ behavior: 'smooth' });
+		}
+		function scrollToResume() {
+			document.getElementById("resume").scrollIntoView({ behavior: 'smooth' });
+		}
+	</script>
+</body>
