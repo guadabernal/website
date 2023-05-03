@@ -722,15 +722,18 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  
 }
 
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 50%;
+  
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  /* float: right; */
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
@@ -934,7 +937,7 @@ section {
 --------------------------------------------------------------*/
 .contact {
   background-color: #9641e5;
-  padding-bottom: 130px;
+  padding-bottom: 50px;
 }
 
 .contact .info {

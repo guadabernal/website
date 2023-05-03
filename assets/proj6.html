@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <title>Guadalupe's Portfolio - Resonance Frequency Tester</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,14 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -50,13 +42,6 @@
         <!-- <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle"> -->
         <div class="social-links mt-3 text-center"> </div>
         <h1 class="text-light"><a href="index.html">Guadalupe Bernal</a></h1>
-        <!-- <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div> -->
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
@@ -79,7 +64,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfoio Details</h2>
+          <h2>Resonance Frequency Tester</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Portfoio Details</li>
@@ -94,35 +79,73 @@
       <div class="container">
 
         <div class="row gy-4">
-
           <div class="col-lg-4">
             <div class="portfolio-description">
-              <h2>Project 6</h2>
               <p>
-                (project 6 description here)
+                This project aimed to accurately <strong>measure the vibrations of a system</strong> and identify its <strong>resonant frequency peak</strong>. 
+                Alongside my partner, we set out to achieve this primary objective while also ensuring that the data collected was 
+                <strong>visualized in a user-friendly manner</strong>. Additionally, we sought to implement the results into an input shaper to test 
+                whether the resonant frequency peak could be minimized. We were able to develop a 
+                comprehensive solution that effectively addressed these objectives.
               </p>
             </div>
           </div>
-
+          <div class="col-lg-8 d-flex align-items-center">
+            <div class="video-container">
+              <iframe width="504" height="283" src="https://www.youtube.com/embed/BHCQTJ3UhHM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <p>
+              We built a software and hardware package that users can use to measure the vibrations of a system. With this information 
+              they can then account for these vibrations when setting their acceleration values.
+              To demonstrate its functionality, we used a single-axis system containing a stepper motor that rotates a threaded rod to 
+              move a plate back and forth. We 3D-Printed a case to hold both the Raspberry Pi and the accelerometer, which we attached to 
+              the plate using binder clips. We communicated with the accelerometer to collect the acceleration data from the system as 
+              the Raspberry Pi communicated with the Teensy microcontroller to slowly increase the frequency the plate moved at. This 
+              information was then stored in a file and processed on the Raspberry Pi to compute the frequency response. We generated 
+              the following three plots to show the results of the project. The first figure shows the raw data collected, the second shows the frequency 
+              response at 40 Hz, and the third shows the hardware 3D printed.
+            </p>
+          </div>
         </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <img src="assets/img/fig1.png" style="width: 100%;">
+          </div>
+          <div class="col-lg-4">
+            <img src="assets/img/fig2.png" style="width: 100%;">
+          </div>
+          <div class="col-lg-4">
+            <img src="assets/img/fig3.png" style="width: 100%;">
+          </div>
+        </div>
+        
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <p>
+              You can find more details on this project here:
+              <a href="https://courses.ece.cornell.edu/ece5990/ECE5725_Fall2022_Projects/3%20Monday%20December%2012/1_Vibration_Analysis/402W_gb438_ns756/index.html" title="More Details"><i class="bx bx-link"></i></a>
+            </p>
+          </div>
+        </div>
+
+        <style>
+        .video-container {
+          /* max-height: 800px; */
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        </style>
+        
 
       </div>
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        <a href="https://bootstrapmade.com/"></a>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
